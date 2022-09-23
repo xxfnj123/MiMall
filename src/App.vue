@@ -1,41 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 //import axios from 'axios'
-import jsonp from 'jsonp'
+//import jsonp from 'jsonp'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    
   },
   data () {
     return {
-      age:30,
-      data:''
+
     }
   },
   mounted () {
 
     //axios -- 会发送一个XHR请求
-    //let url = "https://mock.presstime.cn/mock/632b13eab98faa00824e4ee9/example/restful/:id/list";
-    /* 
+    /*
+    let url = "https://mock.presstime.cn/mock/632b13eab98faa00824e4ee9/example/restful/:id/list";
     axios.get(url).then(()=>{
 
     }) 
     */
 
     //jsonp -- 只是一段js脚本，没有发送请求
-    let url = "https://www.imooc.com/activity/servicetime";
+    /*
+    let url = "/api/activity/servicetime";
     jsonp(url,(err,res)=>{
       let result = res;
       this.data = result;
     })
+    */
   }
 }
 </script>
