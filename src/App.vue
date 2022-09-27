@@ -5,8 +5,7 @@
 </template>
 
 <script>
-//import axios from 'axios'
-//import jsonp from 'jsonp'
+import storage from './storage'
 export default {
   name: 'App',
   components: {
@@ -18,23 +17,11 @@ export default {
     }
   },
   mounted () {
-
-    //axios -- 会发送一个XHR请求
-    /*
-    let url = "https://mock.presstime.cn/mock/632b13eab98faa00824e4ee9/example/restful/:id/list";
-    axios.get(url).then(()=>{
-
-    }) 
-    */
-
-    //jsonp -- 只是一段js脚本，没有发送请求
-    /*
-    let url = "/api/activity/servicetime";
-    jsonp(url,(err,res)=>{
-      let result = res;
-      this.data = result;
-    })
-    */
+    //storage.setItem('a',1);
+    //storage.setItem('user',{a:1});
+    //storage.setItem('abc',{a:1},'user');
+    //storage.clear('a');
+    storage.clear('a','user');
   }
 }
 </script>
