@@ -10,8 +10,8 @@ if(mock){
   require('./mock/api');
 }
 //根据前端的跨越方式做调整  /a/b : /api/a/b => /a/b
-axios.defaults.baseURL = 'https://mock.presstime.cn/mock/6334ef7703bda8005d332324/mockapi';
-//axios.defaults.baseURL = '/api';
+//axios.defaults.baseURL = 'https://mock.presstime.cn/mock/6334ef7703bda8005d332324/mockapi';
+axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 8000;
 //根据环境变量获取不同的请求地址
 //axios.defaults.baseURL = env.baseURL;
