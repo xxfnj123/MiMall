@@ -11,7 +11,7 @@
             <a href="https://baike.quark.cn/" target="_blank">夸克百科</a>
         </div>
         <div class="copyright">
-            Copyright @2019 <span class="domain">mi.futurefe.com</span> All Rights Reserved
+            Copyright @2022 <span class="domain">mi.futurefe.com</span> All Rights Reserved
         </div>
     </div>
 </template>
