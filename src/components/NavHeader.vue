@@ -29,7 +29,7 @@
                                 <li class="product" v-for="(item,index) in phoneList" :key="index">
                                     <a v-bind:href="'/#/product/'+item.id" target="_blank">
                                         <div class="pro-img">
-                                            <img :src="item.mainImage" :alt="item.subtitle">
+                                            <img v-lazy="item.mainImage" :alt="item.subtitle">
                                         </div>
                                         <div class="pro-name">{{item.name}}</div>
                                         <div class="pro-price">{{item.price | currency}}</div>
@@ -48,7 +48,7 @@
                                 <li class="product">
                                     <a href="" target="_blank">
                                         <div class="pro-img">
-                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6511d77270e94146c0b1f96b66d8cc58.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                            <img v-lazy="'/imgs/nav-img/nav-3-1.jpg'" alt="">
                                         </div>
                                         <div class="pro-name">Redmi智能电视X55 2022款</div>
                                         <div class="pro-price">2299元</div>
@@ -57,7 +57,7 @@
                                 <li class="product">
                                     <a href="" target="_blank">
                                         <div class="pro-img">
-                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6511d77270e94146c0b1f96b66d8cc58.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                            <img v-lazy="'/imgs/nav-img/nav-3-2.jpg'" alt="">
                                         </div>
                                         <div class="pro-name">Redmi智能电视X56 2022款</div>
                                         <div class="pro-price">2999元</div>
@@ -66,7 +66,7 @@
                                 <li class="product">
                                     <a href="" target="_blank">
                                         <div class="pro-img">
-                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8871821795310769c1d3896c99b12381.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                            <img v-lazy="'/imgs/nav-img/nav-3-3.png'" alt="">
                                         </div>
                                         <div class="pro-name">小米电视6 65“ OLED</div>
                                         <div class="pro-price">1569元起</div>
@@ -75,7 +75,7 @@
                                 <li class="product">
                                     <a href="" target="_blank">
                                         <div class="pro-img">
-                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0a1ae5341d2dae66cd42566c60d2d666.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                            <img v-lazy="'/imgs/nav-img/nav-3-4.jpg'" alt="">
                                         </div>
                                         <div class="pro-name">小米电视 大师 77” OLED</div>
                                         <div class="pro-price">17999元</div>
@@ -84,7 +84,7 @@
                                 <li class="product">
                                     <a href="" target="_blank">
                                         <div class="pro-img">
-                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/932b583c6eccd8aabfa0771f8a854940.jpg?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                            <img v-lazy="'/imgs/nav-img/nav-3-5.jpg'" alt="">
                                         </div>
                                         <div class="pro-name">小米透明电视</div>
                                         <div class="pro-price">49999元</div>
@@ -93,7 +93,7 @@
                                 <li class="product">
                                     <a href="" target="_blank">
                                         <div class="pro-img">
-                                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ea3390a20547c7298a258528e4aa69ad.png?thumb=1&w=200&h=138&f=webp&q=90" alt="">
+                                            <img v-lazy="'/imgs/nav-img/nav-3-6.png'" alt="">
                                         </div>
                                         <div class="pro-name">小米电视 大师 65英寸OLED</div>
                                         <div class="pro-price">8999元</div>
